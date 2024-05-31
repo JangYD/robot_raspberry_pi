@@ -20,7 +20,7 @@ sudo make install</br>
 Remote PC Setting</br>
 ------------------
 sudo nano ~/.bashrc</br>
-export ROS_MASTER_URI=http://your remote pc ip:11311</br>
+export ROS_MASTER_URI=http:// your remote pc ip:11311</br>
 export ROS_HOSTNAME=your remote pc ip</br>
 ctrl+x</br>
 y</br>
@@ -32,7 +32,7 @@ Raspberry PI setting</br>
 --------------------
 IP Setting</br>
 sudo nano ~/.bashrc</br>
-export ROS_MASTER_URI=http://your remote pc ip:11311</br>
+export ROS_MASTER_URI=http:// your remote pc ip:11311</br>
 export ROS_HOSTNAME=your raspberypi ip</br>
 ctrl+x</br>
 y</br>
@@ -43,21 +43,25 @@ sh create_udev_rules.sh </br>
 
 robot start</br>
 -----------
-Remote PC                                                 Raspberry PI</br>
-1. roscore                                                2. roslaunch robot_launch robot_launch.launch</br>
-3. roslaunch robot_simulation robot_stella.launch</br>
-4. rosrun robot_gui_template robot_gui_template_node</br>
+simulation</br> 
+|Remote PC|Raspberry PI|
+|:-|:-|
+|1. roscore|2. roslaunch robot_launch robot_launch.launch|
+|3. roslaunch robot_simulation robot_stella.launch</br>|
+|4. rosrun robot_gui_template robot_gui_template_node</br>|
 
-slam start</br>
-Remote PC                                                 Raspberry PI</br>
-1. roscore                                                2. roslaunch robot_launch robot_launch.launch</br>
-3. roslaunch robot_slam robot_slam_rviz.launch</br>
-4. rosrun robot_gui_template robot_gui_template_node</br>
+slam</br>
+|Remote PC|Raspberry PI|
+|:-|:-|
+|1. roscore|2. roslaunch robot_launch robot_launch.launch|
+|3. roslaunch robot_slam robot_slam_rviz.launch|
+|4. rosrun robot_gui_template robot_gui_template_node</br>|
 
-navigation start</br>
-Remote PC                                                 Raspberry PI</br>
-1. roscore                                                2. roslaunch robot_launch robot_launch.launch</br>
-3. roslaunch robot_navigation robot_navigation.launch</br>
+navigation</br>
+|Remote PC|Raspberry PI|
+|:-|:-|
+|1. roscore|2. roslaunch robot_launch robot_launch.launch|
+|3. roslaunch robot_navigation robot_navigation.launch|
 
 
 
