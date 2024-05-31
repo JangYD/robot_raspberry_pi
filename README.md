@@ -1,5 +1,5 @@
 Remote PC : Ubuntu 20.04</br>
-Remote PC ROS Version : noetic</br>
+Remote PC ROS Version : noetic</br></br>
 RaspberryPI Version : buster</br>
 RaspberryPI ROS Version : noetic</br>
 
@@ -25,8 +25,12 @@ export ROS_HOSTNAME=your remote pc ip</br>
 ctrl+x</br>
 y</br>
 
-ROS Cartographer install
-https://google-cartographer-ros.readthedocs.io/en/latest/compilation.html
+ROS Cartographer install</br>
+https://google-cartographer-ros.readthedocs.io/en/latest/compilation.html</br>
+
+Cartographer install error </br>
+cartographer: [libabsl-dev] defined as "not available" for OS version [focal]</br>
+file path ~/cartographer/package.xml -> delete <depend>libabsl-dev</depend></br>
 
 Raspberry PI setting</br>
 --------------------
